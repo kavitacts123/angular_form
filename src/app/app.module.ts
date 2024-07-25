@@ -1,8 +1,23 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
-
 import { AppRoutingModule } from './app-routing.module';
+import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { defineLocale } from 'ngx-bootstrap/chronos';
+import { enGbLocale } from 'ngx-bootstrap/locale';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+defineLocale('en-gb', enGbLocale);
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -12,8 +27,16 @@ import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { Form1Component } from './form1/form1.component';
 import { Form2Component } from './form2/form2.component';
+import { BookingFormComponent } from './booking-form/booking-form.component';
+import { DestinationComponent } from './destination/destination.component';
+import { LocationComponent } from './location/location.component';
+import { DateComponent } from './date/date.component';
+import { PeoplesComponent } from './peoples/peoples.component';
+import { RoomsComponent } from './rooms/rooms.component';
+import { HotelListComponent } from './hotel-list/hotel-list.component';
+import { PaymentComponent } from './payment/payment.component';
+
 
 @NgModule({
   declarations: [
@@ -26,12 +49,32 @@ import { Form2Component } from './form2/form2.component';
     GalleryComponent,
     HeaderComponent,
     FooterComponent,
-    Form1Component,
-    Form2Component
+    Form2Component,
+    BookingFormComponent,
+    DestinationComponent,
+    LocationComponent,
+    DateComponent,
+    PeoplesComponent,
+    RoomsComponent,
+    HotelListComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    NgbModule,
+    FormsModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatIconModule,
+    NgxDropzoneModule,
+    NgxDaterangepickerMd.forRoot(),
+    BsDatepickerModule.forRoot()
   ],
   providers: [
     provideClientHydration()
