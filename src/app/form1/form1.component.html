@@ -1,0 +1,31 @@
+<form (ngSubmit)="submitForm()" #bookingForm="ngForm"><form (ngSubmit)="submitForm()" #bookingForm="ngForm"></form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" class="form-control" required [(ngModel)]="booking.name">
+      <div *ngIf="bookingForm.controls['name'].invalid && (bookingForm.controls['name'].dirty || bookingForm.controls['name'].touched)"
+           class="alert alert-danger">
+        <div *ngIf="bookingForm.controls['name'].errors.required">
+          Name is required.
+        </div>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" class="form-control" required [(ngModel)]="booking.email">
+      <div *ngIf="bookingForm.controls['email'].invalid && (bookingForm.controls['email'].dirty || bookingForm.controls['email'].touched)"
+           class="alert alert-danger">
+        <div *ngIf="bookingForm.controls['email'].errors.required">
+          Email is required.
+        </div>
+        <div *ngIf="bookingForm.controls['email'].errors.email">
+          Please enter a valid email address.
+        </div>
+      </div>
+    </div>
+  
+    <!-- Add more fields as needed -->
+  
+    <button type="submit" class="btn btn-primary" [disabled]="bookingForm.invalid">Submit</button>
+  </form>
+  
