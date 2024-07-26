@@ -19,7 +19,6 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 defineLocale('en-gb', enGbLocale);
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { BlogComponent } from './blog/blog.component';
@@ -36,12 +35,12 @@ import { PeoplesComponent } from './peoples/peoples.component';
 import { RoomsComponent } from './rooms/rooms.component';
 import { HotelListComponent } from './hotel-list/hotel-list.component';
 import { PaymentComponent } from './payment/payment.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     AboutComponent,
     ServicesComponent,
     BlogComponent,
@@ -58,6 +57,7 @@ import { PaymentComponent } from './payment/payment.component';
     RoomsComponent,
     HotelListComponent,
     PaymentComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
