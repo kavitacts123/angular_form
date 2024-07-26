@@ -121,3 +121,18 @@ label{
 .btn {
   font-size: 18px;
 }
+
+
+
+
+@media only screen and (max-width: 991px){
+  .date {
+    width: 80%;
+  }
+  }
+  
+  @media only screen and (max-width: 991px){
+  .date {
+    width: 100%;
+  }
+  }

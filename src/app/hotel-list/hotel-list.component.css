@@ -101,3 +101,20 @@ label{
 .btn {
   font-size: 18px;
 }
+
+
+
+@media only screen and (max-width: 991px){
+  .list {
+    width: 80%;
+  }
+  }
+  
+  @media only screen and (max-width: 991px){
+  .list {
+    width: 100%;
+  }
+  .container {
+    max-width: 371px;
+}
+  }

@@ -1,8 +1,9 @@
 /* person-form.component.css */
 
-.peoples{
+.peoples {
   margin-top: 100px;
 }
+
 /* Align form fields in a row */
 .form-row {
   display: flex;
@@ -31,7 +32,8 @@
   /* Padding around the whole form */
   margin-top: 100px;
 }
-input{
+
+input {
   margin-top: 10px;
 }
 
@@ -39,12 +41,15 @@ input{
 .mat-form-field {
   width: 50%;
 }
+
 button.btn.btn-primary {
   padding: 4px 20px;
 }
+
 input#document0 {
   font-weight: 600;
 }
+
 label {
   margin-top: 15px;
   font-weight: 600;
@@ -56,39 +61,43 @@ label {
   padding: 4px 20px;
 }
 
-  button.btn.btn-success {
-    padding: 4px 20px;
-    
-  }
+button.btn.btn-success {
+  padding: 4px 20px;
 
-  button.btn.btn-secondary {
-    margin-bottom: 80px;
-    margin-top: 20px;
-    padding: 4px 20px;
 }
 
-  .button1{
-   display: block;
-   margin-left: 60px;
-   /* padding: 10px; */
-   margin-top: 50px;
-  }
-  
-  .submit {
-    display: flex;
-    margin-top: 20px;
-  }
-  .right_btn{
-    margin-left: auto;
-    padding: 4px 20px;
-  }
-  .left_btn{
-    padding: 4px 20px;
-  }
-.addperson{
+button.btn.btn-secondary {
+  margin-bottom: 80px;
+  margin-top: 20px;
+  padding: 4px 20px;
+}
+
+.button1 {
+  display: block;
+  margin-left: 60px;
+  /* padding: 10px; */
+  margin-top: 50px;
+}
+
+.submit {
+  display: flex;
+  margin-top: 20px;
+}
+
+.right_btn {
+  margin-left: auto;
+  padding: 4px 20px;
+}
+
+.left_btn {
+  padding: 4px 20px;
+}
+
+.addperson {
   display: block;
 }
-.person_sec{
+
+.person_sec {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 20px;
@@ -103,31 +112,77 @@ label {
   border-radius: 8px;
   background-color: #f9f9f9;
 }
-h1{
+
+h1 {
   font-size: 40px;
 }
-h2{
+
+h2 {
   font-size: 35px;
 }
-h3{
+
+h3 {
   font-size: 28px;
 }
-h4{
+
+h4 {
   font-size: 23px;
   font-weight: 800;
 }
-h5{
+
+h5 {
   font-size: 20px;
 }
-p{
+
+p {
   font-size: 16px;
 }
-label{
+
+label {
   font-size: 16px;
 }
+
 .btn {
   font-size: 18px;
 }
-button.btn.btn-primary[_ngcontent-ng-c4252176687] {
+
+button.btn.btn-primary {
   padding: 4px 20px;
+}
+
+
+
+
+@media only screen and (max-width: 991px) {
+  .person-form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .person-form {
+    width: 100%;
+  }
+
+  .button1 {
+    display: block;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .btn_remove {
+    margin-top: 20px;
+    margin-left: auto;
+  }
+  .left_btn{
+    padding: 0;
+}
+.right_btn{
+  padding: 0;
+}
+button.btn.btn-secondary[_ngcontent-ng-c2940343992] {
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding: 4px 20px;
+}
 }

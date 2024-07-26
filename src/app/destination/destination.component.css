@@ -111,3 +111,16 @@ label {
   font-size: 0.875rem;
   margin-top: 5px;
 }
+
+
+@media only screen and (max-width: 991px){
+.destination {
+  width: 80%;
+}
+}
+
+@media only screen and (max-width: 991px){
+.destination {
+  width: 100%;
+}
+}

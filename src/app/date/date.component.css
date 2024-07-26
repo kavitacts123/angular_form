@@ -104,3 +104,16 @@ button.btn.btn-primary {
 .right_btn {
   margin-left: auto;
 }
+
+
+@media only screen and (max-width: 991px){
+  .date {
+    width: 80%;
+  }
+  }
+  
+  @media only screen and (max-width: 991px){
+  .date {
+    width: 100%;
+  }
+  }
