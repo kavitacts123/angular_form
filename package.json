@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/kavitacts123/angular_form",
+  "homepage": "https://kavitacts123.github.io/angular_form",
   "name": "granny_home",
   "version": "0.0.0",
   "scripts": {
@@ -10,7 +10,7 @@
     "test": "ng test",
     "serve:ssr:granny_home": "node dist/granny_home/server/server.mjs",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist/granny_home"
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {
